@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #2c2e31;
+	background-size: 100% 100vh;
+}
+.container{
+	background: #ffffff;
+	margin: 50px auto;
+	min-height: 400px;
+	padding: 20px;
+	width: 70%;
+	border-radius: 2px;
+}
+
+.container h2{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 28px;
+	color: #2c2e31;
+}
+.pair{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(5, auto);
+	justify-content: center;
+	grid-column-gap: 40px;
+	grid-row-gap: 20px;
+}
+
+.distance{
+	padding-top: 60px;
+	font-size: 20px;
+	color: #53575d;
+}
+
+.name{
+	margin-left: 12px;
+}
+.name:first-letter{
+	text-transform: capitalize;
+}
+.name, .surname {
+	display: inline-block;
+	font-size: 20px;
+	color: #2c2e31;
+
+}
+.surname{
+	margin-left: 5px;
+}
+.surname:first-letter{
+	text-transform: capitalize;
+}
+img{
+	border-radius: 50%;
+}
+.error{
+	font-size: 30px;
+	text-align: center;
+	color: #2c2e31;
+	transform: translate(0%,150%);
+}
+.loader{
+	font-size: 30px;
+	text-align: center;
+	color: #2c2e31;
+	transform: translate(0%,150%);
+}
+
+@media screen and (max-width: 530px){
+	.container{
+		width: 100%;
+	}
+	.pair{
+		grid-column-gap: 20px;
+	}
+}
